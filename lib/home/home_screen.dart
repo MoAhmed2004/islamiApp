@@ -18,8 +18,8 @@ class HomeScreenState extends State<HomeScreen> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
+    return  Container(
+      decoration: const BoxDecoration(
         image: DecorationImage(
             fit: BoxFit.fill,
             image:AssetImage("assets/imgs/background.png")),
@@ -36,26 +36,26 @@ class HomeScreenState extends State<HomeScreen> {
               });
             },
             items:[
-          BottomNavigationBarItem(icon:ImageIcon(
+           BottomNavigationBarItem(icon:const ImageIcon(
             AssetImage("assets/imgs/moshaf_blue.png"),
           )
               ,label:"Quran",
             backgroundColor: Theme.of(context).colorScheme.primary,
           ),
-          BottomNavigationBarItem(icon:ImageIcon(
+          BottomNavigationBarItem(icon:const ImageIcon(
             AssetImage("assets/imgs/ahadeth_icon.png"),
           )
               ,label:"Ahadeth",
             backgroundColor: Theme.of(context).colorScheme.primary,
 
           ),
-          BottomNavigationBarItem(icon:ImageIcon(
+          BottomNavigationBarItem(icon:const ImageIcon(
             AssetImage("assets/imgs/sebha_icon.png"),
           )
               ,label:"Tsabeeh",
             backgroundColor: Theme.of(context).colorScheme.primary,
 
-          ),  BottomNavigationBarItem(icon:ImageIcon(
+          ),  BottomNavigationBarItem(icon:const ImageIcon(
             AssetImage("assets/imgs/radio_blue.png"),
           )
               ,label:"Radio",

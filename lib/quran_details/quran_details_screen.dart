@@ -18,7 +18,7 @@ class QuranDetailsScreenState extends State<QuranDetailsScreen> {
 
 
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
             fit: BoxFit.fill,
             image:AssetImage("assets/imgs/background.png")),
@@ -29,7 +29,7 @@ class QuranDetailsScreenState extends State<QuranDetailsScreen> {
         ),
         body:Card(
           child: lines.isEmpty
-              ?Center(child: CircularProgressIndicator(),)
+              ?const Center(child: CircularProgressIndicator(),)
               :Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: ListView.separated(itemBuilder:(context, index) => VerseWidget(

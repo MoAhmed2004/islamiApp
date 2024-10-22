@@ -14,16 +14,16 @@ class IslamiApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: HomeScreen.routname,
       theme: ThemeData(
-        cardTheme: CardTheme(
+        cardTheme: const CardTheme(
           margin: EdgeInsets.all(16),
           color: Colors.white,
           elevation: 20,
         ),
-        dividerTheme: DividerThemeData(
+        dividerTheme: const DividerThemeData(
           color:Color(0xffB7935F) ,
           thickness: 3,
         ),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        bottomNavigationBarTheme:const BottomNavigationBarThemeData(
 
           backgroundColor: Color(0xffB7935F),
 
@@ -32,12 +32,12 @@ class IslamiApp extends StatelessWidget {
         ),
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.purple,
-            primary:Color(0xffB7935F),
+            primary:const Color(0xffB7935F),
           onPrimary: Colors.white,
-          secondary: Color(0xffB7935F).withOpacity(0.57),
+          secondary: const Color(0xffB7935F).withOpacity(0.57),
           onSecondary: Colors.black,
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           centerTitle: true,
           backgroundColor: Colors.transparent,
           titleTextStyle: TextStyle(

@@ -22,7 +22,7 @@ class Quransurawidget extends StatelessWidget {
       
         children: [
           Expanded(child: Text(name,textAlign: TextAlign.center,
-            style:TextStyle(
+            style:const TextStyle(
               fontSize: 25,
             ) ,)),
           Container(
@@ -32,7 +32,7 @@ class Quransurawidget extends StatelessWidget {
       
           ),
           Expanded(child: Text(number.toString(),textAlign: TextAlign.center,
-            style:TextStyle(
+            style:const TextStyle(
               fontSize: 25,
             ) ,)),
         ],

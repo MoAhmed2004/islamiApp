@@ -27,13 +27,13 @@ class Qurantab extends StatelessWidget {
     return Column(
       children: [
         Expanded(child: Image.asset("assets/imgs/quran_image.png")),
-        Divider(
+        const Divider(
           height: 0,
         ),
         Row(
 
           children: [
-            Expanded(child: Text("Sura Name",textAlign: TextAlign.center,
+            const Expanded(child: Text("Sura Name",textAlign: TextAlign.center,
               style:TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w600,
@@ -44,14 +44,14 @@ class Qurantab extends StatelessWidget {
               width: width*0.01,
 
             ),
-            Expanded(child: Text("Verses Number",textAlign: TextAlign.center,
+            const Expanded(child: Text("Verses Number",textAlign: TextAlign.center,
               style:TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w600,
               ) ,)),
           ],
         ),
-        Divider(
+        const Divider(
           height: 0,
         ),
         Expanded(
@@ -61,7 +61,7 @@ class Qurantab extends StatelessWidget {
             number: versesNumber[index] ,
             index: index,
           ),
-              separatorBuilder: (context, index) => Divider(
+              separatorBuilder: (context, index) =>const  Divider(
                 height: 0,
               ),
               itemCount: suraNames.length),

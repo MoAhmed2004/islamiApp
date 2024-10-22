@@ -10,7 +10,7 @@ class VerseWidget extends StatelessWidget {
     return Text("$verse ($verseNumber)",
       textAlign: TextAlign.center,
       textDirection: TextDirection.rtl,
-      style: TextStyle(
+      style: const TextStyle(
       fontSize: 20,
       fontWeight: FontWeight.w400,
     ),);
